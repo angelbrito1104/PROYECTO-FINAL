@@ -47,7 +47,7 @@ En la primera imagen se observa el sensor infrarrojo instalado en la parte front
 
 
 
-<img width="720" height="1280" alt="92ea4e80-811a-4a27-ab00-79e1fbf12e61" src="https://github.com/user-attachments/assets/773cf803-bc27-4a42-b688-37acb764975b" />
+<img width="520" height="600" alt="92ea4e80-811a-4a27-ab00-79e1fbf12e61" src="https://github.com/user-attachments/assets/773cf803-bc27-4a42-b688-37acb764975b" />
 
 
 
@@ -76,9 +76,9 @@ En la segunda y tercera imagen se observa el montaje completo del carro robótic
 
 
 
-<img width="1280" height="720" alt="be950faa-97fa-4f96-86f8-70b27f055125" src="https://github.com/user-attachments/assets/17f2ee89-f256-42a1-94d6-272a02bf7255" />
+<img width="500" height="580" alt="be950faa-97fa-4f96-86f8-70b27f055125" src="https://github.com/user-attachments/assets/17f2ee89-f256-42a1-94d6-272a02bf7255" />
 
-<img width="720" height="1280" alt="b10b7790-01b5-4674-96db-8331cbed5f93" src="https://github.com/user-attachments/assets/c7a3e373-ccd5-4a40-ac78-a6a9107e3968" />
+<img width="480" height="580" alt="b10b7790-01b5-4674-96db-8331cbed5f93" src="https://github.com/user-attachments/assets/c7a3e373-ccd5-4a40-ac78-a6a9107e3968" />
 
 
 ## Explicación
@@ -99,3 +99,105 @@ Se realizó el ensamblaje de:
 | Motores DC        | Permiten el movimiento                    |
 | Sensor infrarrojo | Detecta la línea                          |
 | Batería           | Alimenta el circuito                      |
+
+
+
+Resultado esperado
+
+El carro debe quedar firme y todos los componentes correctamente ajustados.
+
+
+## Conexión del sensor
+
+En la imagen 2 se observa el sensor conectado en la parte frontal del vehículo.
+
+Explicación de conexiones
+
+El sensor normalmente tiene:
+
+VCC → 5V Arduino
+GND → GND Arduino
+OUT → Pin digital del Arduino
+
+El cable naranja y morado observados en la imagen corresponden a señales de alimentación y salida del sensor.
+
+
+
+## Imagen 4
+
+El módulo rojo corresponde al driver de motores.
+
+<img width="520" height="580" alt="5a825980-6484-4815-8e49-b397566f2a5f" src="https://github.com/user-attachments/assets/386b8145-5b0b-4c26-b2ec-c7d5ea4322cd" />
+
+
+## Explicación
+
+El L298N permite controlar:
+
+- Giro hacia adelante.
+- Giro hacia atrás.
+- Velocidad de los motores.
+
+
+| L298N   | Arduino     |
+| ------- | ----------- |
+| IN1     | Pin digital |
+| IN2     | Pin digital |
+| IN3     | Pin digital |
+| IN4     | Pin digital |
+| ENA/ENB | PWM         |
+| GND     | GND         |
+| 12V     | Batería     |
+
+
+## Resultado esperado
+
+Los motores deben responder correctamente a las señales enviadas por el Arduino.
+
+
+
+
+## Organización del cableado
+
+En la última imagen se observan:
+
+- Los cables del lado izquierdo.
+- La conexión de los motores.
+- El protoboard.
+- La ubicación frontal del sensor.
+
+
+## Explicación
+
+Se organizaron los cables para:
+
+- Evitar falsos contactos.
+- Mejorar la alimentación.
+- Facilitar mantenimiento.
+
+El lado marcado en rojo corresponde principalmente al cableado de señales y control, mientras que el lado verde corresponde a conexiones de motores.
+
+## Programación Básica del Carro
+Funcionamiento lógico
+
+El programa realiza:
+
+- Lectura del sensor.
+- Verificación de línea negra.
+- Movimiento automático:
+- Adelante.
+- Giro izquierda.
+- Giro derecha.
+
+## Funcionamiento Esperado
+- El carro avanza siguiendo la línea.
+- El sensor detecta cambios de color.
+- Los motores corrigen la dirección automáticamente.
+
+
+## Conclusiones
+- Se logró construir un carro seguidor de línea funcional basado en Arduino.
+- El sensor infrarrojo permitió detectar correctamente superficies negras y blancas.
+- El driver L298N controló adecuadamente los motores.
+- El proyecto permitió aplicar conocimientos de programación, electrónica y automatización.
+
