@@ -195,6 +195,22 @@ El programa realiza:
 - Los motores corrigen la dirección automáticamente.
 
 
+# Pruebas funcionamiento 
+
+<img width="480" height="460" alt="af397688-b7b4-46b7-a4e5-68a209c30d9e" src="https://github.com/user-attachments/assets/685fef8a-28ab-4e29-befd-fbe9490f5fe1" />
+<img width="480" height="460" alt="35eea9e2-2a61-4c11-836b-8a151f72dad4" src="https://github.com/user-attachments/assets/82a64ea1-59b7-45d3-8fe8-780630ef3f1d" />
+<img width="480" height="460" alt="ec45df10-e161-422a-b773-e94d0c00012b" src="https://github.com/user-attachments/assets/f85ce2bc-5a14-4e1a-8f74-65671ca3f38c" />
+<img width="480" height="460" alt="af4c5fcf-c1f5-4d23-83b0-342eb9260557" src="https://github.com/user-attachments/assets/4775d068-eb2f-4781-9032-ef13259efe83" />
+
+<img width="480" height="460![Uploading 3a96178f-2821-4ff6-8a6f-0b310ffaabff.jpg…]()
+" alt="306c63b7-c6ac-4663-997e-dda4c47b1293" src="https://github.com/user-attachments/assets/24d5243c-086c-4eb4-b4b5-1cb41d319058" />
+
+<img width="480" height="460" alt="image" src="https://github.com/user-attachments/assets/4916471b-a5ef-4dc6-84c7-0a69902f6584" />
+
+Las imágenes muestran el funcionamiento de un carro inteligente controlado con Arduino y una interfaz en Streamlit. En las primeras tres imágenes se observa cómo el sistema detecta diferentes colores en tiempo real, mostrando estados como azul, rojo y no reconocido. La interfaz cambia visualmente según el color detectado y muestra la comunicación serial con Arduino. En la última imagen se presenta la estructura física del proyecto, donde se observan componentes como Arduino UNO, el módulo L298N, la protoboard, motores y conexiones eléctricas utilizadas para el funcionamiento del carro.
+
+
+
 ## Conclusiones
 - Se logró construir un carro seguidor de línea funcional basado en Arduino.
 - El sensor infrarrojo permitió detectar correctamente superficies negras y blancas.
